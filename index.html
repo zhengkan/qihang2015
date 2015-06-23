@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:1000px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script src="relationData.js"></script>
+    <script src="datacenter.js"></script>
+    <script src="relation.js"></script>
+    <script src="nodeList.js"></script>
+    <script src="linkList.js"></script>
+    <script type="text/javascript">
+    var relation=new Relation({
+        container:document.getElementById("main")
+    });
+    </script>
+</body>
